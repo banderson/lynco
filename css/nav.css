@@ -1,0 +1,97 @@
+/* HACK: fixes the overflow issue in IE/Firefox on PC */
+#navigation ol li p {font-size: 95%}
+
+#navigation ol {
+	list-style-type: none;
+	vertical-align: middle;
+	margin: 0;
+	position: relative;
+}
+#navigation ol li {
+	float: left;
+	border-left: 1px #eee solid;
+	border-top: 1px #eee solid;
+	color: #5c716e;
+	width: 196px;
+	_width: 25%;
+}
+
+#navigation ol li div {
+	background-position: 0 100px;
+	background-repeat: no-repeat;
+	height: 270px;
+	z-index: 100;
+	background-color: #fff;
+}
+
+#navigation ol li#contact div {
+background-image: url('../images/contact.jpg')
+}
+#navigation ol li#services div {
+background-image: url('../images/services.jpg')
+}
+#navigation ol li#projects div {
+background-image: url('../images/projects.jpg')
+}
+#navigation ol li#about div {
+background-image: url('../images/about-us.jpg')
+}
+
+
+#navigation.min ol li div {
+	display:none;
+}
+
+#navigation.min ol li:hover div {
+	display:block;
+	height: 85px;
+}
+
+#navigation ol li:hover div {
+	background-image: none;
+}
+
+#navigation.min ol li {
+	min-height: 15px;
+	height: 15px;
+}
+
+
+#navigation.min ol li div {
+	border: 1px #8aaba4 solid;
+	/*background: url(../images/drop-shadow.gif) -300px -398px !important;*/
+}
+
+#navigation ol li a:hover, #navigation ol li.selected a  {
+	background: url(../images/light-nav.gif);
+}
+
+
+
+#navigation ol li a {
+	color: #fff;
+	font: bold 1.2em/30px verdana, arial, sans-serif;
+	text-decoration: none;
+	background: url(../images/dark-nav.gif);
+	padding-left: 5px;
+	display: block;
+	text-align: center;
+}
+
+#navigation ol li.first {
+border-left: none;
+}
+
+#navigation ol li div {
+padding: 5px;
+}
+
+#navigation ol li div h3 {
+margin: 10px 0;
+color: #5c716e;
+}
+
+#navigation ol li.current a {
+	background-color: #8aaba4;
+}
+

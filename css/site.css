@@ -1,0 +1,117 @@
+
+@import url('blueprint/ie.css');
+@import url('blueprint/screen.css');
+@import url('nav.css');
+/*@import url('fonts.css');*/
+
+body {
+	background: #eee !important;
+}
+
+h1,h2,h3,h4,h5,h6 {margin-bottom: 5px;}
+
+.container {
+	background: #fff;
+	color: #5c716e;
+	
+	/*** 
+		Override the BluePrint default width of 960px because we have 2 less columns 
+		(2 cols * 40 width = -80px) 
+	***/
+	width: 800px !important;
+	padding: 0 40px;
+}
+
+#main, .sidebar {
+	margin-top: 40px
+}
+
+#header {
+height: 110px;
+color: #FFF;
+clear: both;
+text-align: left;
+background: url('../images/tagline.gif') no-repeat 440px;
+}
+
+#header img {
+	margin-top: 10px;
+}	
+
+#footer {
+	margin-top: 25px !important;
+}
+
+#memberships {
+	text-align: center;
+}
+
+
+h5 {
+	padding-left: 23px;
+	margin-top: 15px;
+	background: url(../images/icon_check.png) no-repeat left;
+}
+
+
+
+.sidebar blockquote {
+    background: url(../images/quote_open.gif) no-repeat;
+    margin: 0 0;
+    padding: 4px 20px; }
+  .sidebar blockquote p:after {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    content: " ";
+    background: url(../images/quote_close.gif) no-repeat right bottom;
+    position: absolute;
+    float: right;
+    margin-bottom: -10px; }
+  .sidebar cite {
+    font-style: italic;
+    color: #999;
+    display: block;
+    text-align: right;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+div.module h3 {
+	margin: 0 0 5px;
+	padding: 0;
+	line-height: normal;
+}
+
+div.module {
+	margin: 0 0 10px;
+	padding: 0;
+	background: url(../images/box-br.gif) no-repeat bottom right;
+	float: left;
+	width: 100%;
+	clear: both;
+}
+
+div.module div {
+	margin: 0;
+	background: url(../images/box-bl.gif) no-repeat bottom left;
+}
+
+div.module div div {
+	background: url(../images/box-tr.gif) no-repeat top right;
+}
+
+div.module div div div {
+	padding: 15px 15px 20px;
+	background: url(../images/box-tl.gif) no-repeat top left;
+}
+
+div.module div div div div {
+	margin: 0;
+	padding: 0;
+	background: none;
+	float: none;
+}
